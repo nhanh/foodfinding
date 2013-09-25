@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  restName: MyString
+  rateNumber: 1.5
+  restImage: MyText
+  restType: 1
+  Address: MyString
+  district_id: 1
+  Longitude: MyString
+  Latitude: MyString
+
+two:
+  restName: MyString
+  rateNumber: 1.5
+  restImage: MyText
+  restType: 1
+  Address: MyString
+  district_id: 1
+  Longitude: MyString
+  Latitude: MyString

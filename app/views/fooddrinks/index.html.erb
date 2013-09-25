@@ -1,0 +1,37 @@
+<h1>Listing fooddrinks</h1>
+
+<table>
+  <tr>
+    <th>Foods and Drinks</th>
+    <th>Category</th>
+    <th>Restaurant</th>
+    <th>Price</th>
+    <th>Rate</th>
+    <th>Image</th>
+    <th>Date Upload</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fooddrinks.each do |fooddrink| %>
+  <tr>
+    <td><%= fooddrink.fdName %></td>
+    <td><%= fooddrink.category.cateName %></td>
+    <td><%= fooddrink.restaurant_id %></td>
+    <td><%= fooddrink.Price %></td>
+    <td><%= fooddrink.rateNumber %></td>
+    <td><%= fooddrink.fdImage %></td>
+    <td><%= fooddrink.dateUpload %></td>
+    <td><%= fooddrink.Type == 0 ? "Thuc An" : "Thuc Uong" %></td>
+    <td><%= link_to 'Show', fooddrink %></td>
+    <td><%= link_to 'Edit', edit_fooddrink_path(fooddrink) %></td>
+    <td><%= link_to 'Destroy', fooddrink, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fooddrink', new_fooddrink_path %>

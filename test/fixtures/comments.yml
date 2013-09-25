@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rateNumber: 1.5
+  Name: MyString
+  Title: MyString
+  Description: MyString
+  dateComment: 2013-09-24
+  type_id: 1
+
+two:
+  rateNumber: 1.5
+  Name: MyString
+  Title: MyString
+  Description: MyString
+  dateComment: 2013-09-24
+  type_id: 1

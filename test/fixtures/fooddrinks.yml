@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fdName: MyString
+  category_id: 1
+  restaurant_id: 1
+  Price: 1
+  rateNumber: 1.5
+  fdImage: MyText
+  dateUpload: 2013-09-24
+  Type: 1
+
+two:
+  fdName: MyString
+  category_id: 1
+  restaurant_id: 1
+  Price: 1
+  rateNumber: 1.5
+  fdImage: MyText
+  dateUpload: 2013-09-24
+  Type: 1

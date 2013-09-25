@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ratenumber:</b>
+  <%= @comment.rateNumber %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @comment.Name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @comment.Title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @comment.Description %>
+</p>
+
+<p>
+  <b>Datecomment:</b>
+  <%= @comment.dateComment %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @comment.type_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

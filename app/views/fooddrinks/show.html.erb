@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fdname:</b>
+  <%= @fooddrink.fdName %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @fooddrink.category_id %>
+</p>
+
+<p>
+  <b>Restaurant:</b>
+  <%= @fooddrink.restaurant_id %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @fooddrink.Price %>
+</p>
+
+<p>
+  <b>Ratenumber:</b>
+  <%= @fooddrink.rateNumber %>
+</p>
+
+<p>
+  <b>Fdimage:</b>
+  <%= @fooddrink.fdImage %>
+</p>
+
+<p>
+  <b>Dateupload:</b>
+  <%= @fooddrink.dateUpload %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @fooddrink.Type %>
+</p>
+
+
+<%= link_to 'Edit', edit_fooddrink_path(@fooddrink) %> |
+<%= link_to 'Back', fooddrinks_path %>
