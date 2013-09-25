@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :restType %><br />
-    <%= f.number_field :restType %>
+    <%= f.select :restType, options_for_select([["Nha Hang Thuc An", "0"], ["Nha Hang Thuc Uong", "1"]]) %>
   </div>
   <div class="field">
     <%= f.label :Address %><br />
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :district_id %><br />
-    <%= f.number_field :district_id %>
+    <%= f.select :district_id, options_for_select(District.all.collect{|d| [d.districtName, d.id]}) %>
   </div>
   <div class="field">
     <%= f.label :Longitude %><br />

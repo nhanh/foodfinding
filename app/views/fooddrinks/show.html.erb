@@ -7,12 +7,12 @@
 
 <p>
   <b>Category:</b>
-  <%= @fooddrink.category_id %>
+  <%= @fooddrink.category.cateName %>
 </p>
 
 <p>
   <b>Restaurant:</b>
-  <%= @fooddrink.restaurant_id %>
+  <%= @fooddrink.restaurant.restName %>
 </p>
 
 <p>
@@ -37,7 +37,7 @@
 
 <p>
   <b>Type:</b>
-  <%= @fooddrink.Type %>
+  <%= @fooddrink.Type==0 ? "Thuc An" : "Thuc Uong" %>
 </p>
 
 

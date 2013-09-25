@@ -20,9 +20,9 @@
     <td><%= restaurant.restName %></td>
     <td><%= restaurant.rateNumber %></td>
     <td><%= restaurant.restImage %></td>
-    <td><%= restaurant.restType %></td>
+    <td><%= restaurant.restType==0 ? "Nha Hang Thuc An" : "Nha Hang Thuc Uong" %></td>
     <td><%= restaurant.Address %></td>
-    <td><%= restaurant.district_id %></td>
+    <td><%= restaurant.district.districtName %></td>
     <td><%= restaurant.Longitude %></td>
     <td><%= restaurant.Latitude %></td>
     <td><%= link_to 'Show', restaurant %></td>
