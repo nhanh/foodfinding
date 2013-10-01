@@ -1,25 +1,46 @@
-<h1>Listing districts</h1>
-
-<table>
-  <tr>
-    <th>Districtname</th>
-    <th>Districtsynomyms</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @districts.each do |district| %>
-  <tr>
-    <td><%= district.districtName %></td>
-    <td><%= district.districtSynomyms %></td>
-    <td><%= link_to 'Show', district %></td>
-    <td><%= link_to 'Edit', edit_district_path(district) %></td>
-    <td><%= link_to 'Destroy', district, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New District', new_district_path %>
+<div class="span9" id="content">
+<h3>Districts</h3>
+<div class="row-fluid">
+<!-- block -->
+  <div class="block">
+    <div class="navbar navbar-inner block-header">
+      <div class="muted pull-left">Districts Information</div>
+    </div>
+    <div class="block-content collapse in">
+      <div class="span12">
+        <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
+          <thead>
+            <tr>
+              <th>District Name</th>
+              <th>District Synomyms</th>
+              <th>Show</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+              <% @districts.each do |district| %>
+              <tr>
+                <td><%= district.districtName %></td>
+                <td><%= district.districtSynomyms %></td>
+                <td><%= link_to 'Show', district %></td>
+                <td><%= link_to 'Edit', edit_district_path(district) %></td>
+                <td><%= link_to 'Destroy', district, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /block -->
+  </div>
+  <%= link_to 'New District', new_district_path %>
+</div>
+<script src="/vendor/jquery-1.9.1.js"></script>
+<script src="/vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script>
+  $(function() {
+            
+  });
+</script>

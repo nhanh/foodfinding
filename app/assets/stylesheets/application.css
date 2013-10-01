@@ -12,11 +12,12 @@
  *= require_tree .
  */
 
-  #btn-login, #btn-reset{
- 	width: 174px;
- }
+/* form login */
+.btn-sign {
+ 	width: 49%;
+}
 
- .login{
- 	margin-top: 200px;
- }
+.login {
+ 	margin-top: 150px;
+}
 

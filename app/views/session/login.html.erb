@@ -5,39 +5,17 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-  <body>
-    <section id="content">
-      <div class="row login">    
-        <div class="col col-lg-4 col-offset-4 m-t-large">
-          <section class="panel">
+  <body id="login">
+    <div class="container login">
 
-            <header class="panel-heading text-center">Sign In</header>
+      <form class="form-signin">
+        <h3 class="form-signin-heading">Sign in</h3>
+        <input name="username" type="text" class="input-block-level" placeholder="Email address">
+        <input name="pass" type="password" class="input-block-level" placeholder="Password">
+        <button class="btn btn-primary btn-sign" type="submit">Sign in</button>
+        <button class="btn btn-warning btn-sign" type="reset">Reset</button>
+      </form>
 
-            <form class="form-horizontal">
-              <div class="block">
-                <label class="control-label">Username</label>
-                <input id="textinput" name="textinput" type="text" placeholder="Username" class="input-xlarge">
-              </div>
-              
-                <!-- Password input-->
-              <div class="block">
-                <label class="control-label">Password</label>
-                <input id="passwordinput" name="passwordinput" type="password" placeholder="Password" class="input-xlarge">
-              </div>
-              <br/>
-
-                <!-- Button (Double) -->
-              <div class="control-group">
-                <div class="controls">
-                  <button id="btn-login" name="button1id" class="btn btn-primary">Sign in</button>
-                  <button id="btn-reset" name="button2id" class="btn btn-warning">Reset</button>
-                </div>
-              </div>
-            </form>
-
-          </section>
-        </div>
-      </div>
-    </section>
+    </div> <!-- /container -->
   </body>
 </html>

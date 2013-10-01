@@ -1,7 +1,7 @@
 class SessionController < ApplicationController
   def login
     respond_to do |format|
-      format.html
+      format.html {render layout: false}
     end
   end
 end
